@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+* {
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+:root{
+    --rosso-fuoco:#000000;
+    --dark-red: darkred;
+    --rosa: #c89393a6;
+    --bianco:#cac5c5;
+    --grigio:rgba(148, 154, 84, 0.246);
+    --grigio_light:rgba(221, 216, 216, 0.813);
+    --form:#c89393;
+
+}
+
+
+
+.bg-grigio-light{
+    background-color: var(--grigio_light);
+}
+
+.rosso{
+    color: var(--rosso-fuoco);
+}
+
+.rosa{
+    background-color: var(--rosa);
+}
+.dark-red{
+    color:var(--dark-red);
+}
+
+
+header {
+    background: linear-gradient(rgba(200, 147, 147, 0), var(--rosa)), url('./../../public/media/header1.jpg');
+    background-position:center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 700px;
+    border-bottom: 1px solid black;
+}
+
+
+.secondary-pattern{
+    
+    background: linear-gradient(rgba(200, 147, 147, 0), var(--rosa)), url('./../../public/media/header.jpg');
+    background-position:center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    border-bottom: 1px solid black;
+    top:-35vh;
+}
+
+.custom-h1{
+  text-shadow:
+    3px 3px 3px black,
+    0 0 0em white,
+    0 0 0em white;
+ 
+}
+
+h2{
+    color: var(--dark-red);
+   
+}
+
+.body-custom {
+    background-image: url('./../../public/media/pattern.jpg');
+    /* è stata inserita la max height per eliminare spazi vuoti tra la seconda immagine e il footer che è stato alzato di 35vh perchè è stata alzata a 35vh la seconda immagine per farla partire sotto il form o la tabella */
+    max-height: 100vh;
+}
+
+.bg-navbar {
+    font-size: 25px;
+    background-color: var(--rosa);
+   border-bottom: 1px solid black;
+
+   text-shadow:
+   1px 1px 2px rgb(232, 221, 221),
+   0 0 1em rgb(249, 249, 250),
+   0 0 0.2em rgb(250, 250, 252);
+ color: var(--grigio_light);
+    
+}
+
+.btn-custom{
+    background-color:var(--dark-red);
+    border: 1px solid whitesmoke;
+    color:whitesmoke;
+}
+
+.btn-custom:hover{
+    background-color: var(--rosa);
+    color:black;
+    border: 1px solid var(--rosa);
+}
+
+.bg-footer {
+    background-color:var(--rosa);
+    border-bottom: 1px solid black;
+    top:-35vh;
+}
+
+.top-su-header{
+    position: relative;
+    top:-40vh;
+    border-style: double;
+    background-color: var(--form);
+    z-index: 999;
+}
+
+/* serve per dare stacco tra una immagine e l'altra degli sfondi. è impostata a livello generico in layout  tra in vari top:-35, alla fine l'altezza sarà 50-35
+quindi è stata impostata un altezza minima. Per la lista delle avventure più la lista è lunga più aumenterà il distacco quindi è stata impostata un altezza max*/
+.vh-stacco-sfondi{
+    width: 100%;
+    min-height: 60vh;
+    max-height: 80vh;
+}
+
+.form-fortify{
+    width: 50%;
+    height: 50vh;
+    
+}
